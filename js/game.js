@@ -25,6 +25,10 @@ var Game = function() {
 		[0,0,0,0,0,0,0,0,0,0],
 		[0,0,0,0,0,0,0,0,0,0]
 	];
+	//当前方块
+	var cur;
+	//下一个方块
+	var next;
 	//divs
 	var nextDivs = [];
 	var gameDivs = [];
