@@ -61,4 +61,18 @@ var Game = function() {
 			}
 		}
 	}
+
+	//初始化
+	var init = function(doms){
+		gameDiv = doms.gameDiv;//赋值dom元素
+		nextDiv = doms.nextDiv;
+		cur = new Square();//实例化
+		next = new Square();
+		initDiv(gameDiv,gameData,gameDivs);
+		initDiv(nextDiv,next.data,nextDivs);
+		refreshDiv(gameData,gameDivs);
+		refreshDiv(next.data,nextDivs);
+	}
+	//导出API
+	this.init = init;//让外面可调用到里面的init函数
 }
